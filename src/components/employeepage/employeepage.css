@@ -1,0 +1,157 @@
+.section-page {
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 3rem;
+}
+
+.employee-image img {
+  width: 180px;
+  height: 170px;
+  background-size: contain;
+}
+.employee-section {
+  display: flex;
+}
+.container {
+  justify-content: space-between;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem 3.5rem;
+  text-align: center;
+}
+.employee-name {
+  margin: 5px;
+}
+
+.employee-name h2 {
+  text-transform: capitalize;
+  font-weight: 400;
+  font: size 16px;
+}
+.employee-details {
+  font-weight: 300;
+  padding-top: 10px;
+  /* margin: 10px; */
+}
+.employee-details .job {
+  text-transform: capitalize;
+}
+@media screen and (min-width: 992px) {
+  .section-page {
+    width: 105vw;
+  }
+}
+
+.section-page {
+  background: #222;
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  padding: 2rem;
+}
+section h1 {
+  text-align: center;
+}
+
+.section-page:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* pagination button */
+.btn {
+  padding: 0.35rem 0.75rem;
+  letter-spacing: 1.6px;
+  font-size: 0.75rem;
+  color: var#fff;
+  background: hsl(205, 78%, 60%);
+  border-radius: 0.75rem;
+  border-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.page-btn {
+  width: 2rem;
+  height: 2rem;
+  background: hsl(205, 90%, 76%);
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: all 0.3s linear;
+}
+.active-btn {
+  background: hsl(205, 86%, 17%);
+  color: #fff;
+}
+.prev-btn,
+.next-btn {
+  background: transparent;
+  border-color: transparent;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 775px) {
+  .btn-container {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+}
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+  transition: all 0.3s linear;
+}
+.edit-btn {
+  color: hsl(125, 71%, 66%);
+}
+.edit-btn:hover {
+  color: hsl(125, 67%, 44%);
+}
+.delete-btn {
+  color: hsl(360, 67%, 44%);
+}
+.delete-btn:hover {
+  color: #222;
+}
+.btnn-container {
+  display: flex;
+  padding: 20px 0;
+  background: white;
+  width: '100%';
+  justify-content: center;
+  /* margin-top: 8rem; */
+  opacity: 0;
+}
+/* .show {
+  display: block;
+  background-color: #222;
+} */
+.btnn-container:hover {
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}

@@ -1,0 +1,87 @@
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 3rem;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+.section-center {
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  padding: 2rem;
+}
+.section-center:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.form-label {
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 7px;
+  color: #222;
+  font-weight: bold;
+  padding-left: 15px;
+}
+form h3 {
+  color: hsl(205, 86%, 17%);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+.form p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  margin: 0 auto;
+  color: #f00e0e;
+  /* padding-right: ; */
+}
+.form-inputs {
+  padding: 1rem;
+  margin: 1rem;
+  padding-left: 1rem;
+  background: hsl(210, 36%, 96%);
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-color: transparent;
+  font-size: 1rem;
+  flex: 1 0 auto;
+  color: hsl(210, 22%, 49%);
+}
+.form-inputs::placeholder {
+  color: hsl(210, 22%, 49%);
+  text-transform: capitalize;
+}
+.submit-btn {
+  background: hsl(210, 31%, 80%);
+  border-color: transparent;
+  width: 20rem;
+  height: 4rem;
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  cursor: pointer;
+  content: hsl(210, 22%, 49%);
+  transition: all 0.3s linear;
+  font-size: 2rem;
+}
+.submit-btn:hover {
+  background: hsl(210, 22%, 49%);
+  color: #fff;
+}
