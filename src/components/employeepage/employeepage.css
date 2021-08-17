@@ -1,7 +1,3 @@
-/* .employee-page {
-  background-color: black;
-} */
-
 .employeeSection {
   width: 90vw;
   margin: 0 auto;
@@ -11,18 +7,7 @@
 .employeeSection h1 {
   text-align: center;
 }
-/* .em-page {
-  background: #222;
-  background: #fff;
-  border-radius: 0.25rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s linear;
-  padding: 2rem;
-} */
 
-/* .employee-page:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-} */
 .employeeDetails img {
   width: 150px;
   height: 170px;
@@ -39,8 +24,6 @@
 }
 .employeeInfo {
   text-transform: capitalize;
-  /* margin: 5px; */
-  /* padding-left: 4rem; */
 }
 
 .employeeInfo h2 {
@@ -59,33 +42,13 @@
 .employeeContent {
   font-weight: 300;
   padding-top: 20px;
-  /* margin: 20px; */
 }
-/* .employeeContent .job {
-  text-transform: capitalize;
-} */
-/* @media screen and (min-width: 992px) {
-  .employeeDetails {
-    width: 100vw;
-  }
-} */
-/* @media screen and (min-width: 812px) {
-  .employeeDetails {
-    width: 150vw;
-  }
-} */
-/* @media screen and (min-width: 992px) {
+
+@media screen and (min-width: 992px) {
   .employee-profilee {
-    width: 100vw;
-    background-color: black;
+    width: 90vw;
   }
-} */
-/* @media screen and (min-width: 812px) {
-  .employee-section {
-    display: flex;
-    flex-wrap: wrap;
-  }
-} */
+}
 
 /* pagination button */
 .btn {
@@ -165,6 +128,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding-bottom: 0.5rem; */
+  padding-bottom: 0.5rem;
   margin-top: 9rem;
 }

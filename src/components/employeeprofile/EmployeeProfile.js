@@ -43,37 +43,52 @@ const EmployeeProfile = () => {
       </main>
       <aside className="employee-records">
         <h4>loan record</h4>
+
         <article className="employee-record">
           <div className="employee-calendar">
-            <FcCalendar className="icon" />
-            Feb
+            <div>
+              <FcCalendar className="icon" />
+            </div>
+            <div>Feb</div>
           </div>
           <div className="details">
             <p>borrowed : &#8358;50,000</p>
+            <hr />
             <p>receivable : &#8358;100,000</p>
           </div>
         </article>
         <article className="employee-record">
           <div className="employee-calendar">
-            <FcCalendar className="icon" />
-            jan
+            <div>
+              <FcCalendar className="icon" />
+            </div>
+            <div>JAN</div>
           </div>
+          {/* <div className="year">
+            <h1>2019 </h1>
+            <hr />
+          </div> */}
           <div className="details">
             <p>borrowed: &#8358;50,000</p>
+            <hr />
             <p>receivable: &#8358;100,000</p>
           </div>
         </article>
         <article className="employee-record">
           <div className="employee-calendar">
-            <FcCalendar className="icon" />
-            dec
+            <div>
+              <FcCalendar className="icon" />
+            </div>
+
+            <div>dec</div>
           </div>
           <div className="details">
             <p>borrowed : &#8358;50,000</p>
+            <hr />
             <p>receivable : &#8358;100,000</p>
           </div>
         </article>
-        2019
+
         {/* <div className="employee-calendar">
           <FcCalendar />
           jan

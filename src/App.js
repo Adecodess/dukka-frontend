@@ -15,14 +15,12 @@ import Form from './components/createemployee/Form';
 function App() {
   return (
     <Router>
-      <Navbar component={Home} />
+      <Navbar />
       <Switch>
         {/* <Route exact path="/" component={Home} /> */}
-        <Route component={Form} />
+        <Route exact path="/" component={Form} />
         <Route path="/aboutemployees" component={AboutEmployees} />
-        <Route
-          path="/employeeprofile/:id"
-          children={<EmployeeProfile />}></Route>
+        <Route path="/employeeprofile/:id" component={EmployeeProfile}></Route>
         <Route path="*" component={Error} />
       </Switch>
     </Router>

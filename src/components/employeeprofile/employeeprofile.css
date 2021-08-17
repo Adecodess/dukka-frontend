@@ -15,6 +15,17 @@
   height: 170px;
   /* background-size: contain; */
 }
+.year {
+  /* display: flex; */
+  padding: 30px;
+}
+.year > hr {
+  width: 85%;
+  position: relative;
+  top: -15px;
+  left: 20%;
+}
+
 .employee-profilePage {
   display: flex;
   justify-content: space-between;
@@ -56,24 +67,38 @@
 }
 
 .employee-calendar {
-  display: inline-block;
+  /* display: inline-block; */
+
   margin-top: 7px;
-  margin-left: 30px;
+  margin-left: 40px;
+  width: 15%;
+  padding: 15px 15px;
+  position: relative;
+  top: -9px;
   /* height: 10vh; */
 }
-
+.employee-calendar > div {
+  text-align: center;
+}
+.employee-calendar > .icon {
+  /* text-align: center; */
+  margin: 0 auto;
+}
 .details {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 20px;
-  padding: 8px;
+  padding: 8px 8px;
+  width: 74%;
+  border: 2px solid #455a64;
   /* align-items: center;
    */
+  margin-bottom: 10px;
   margin-right: 30px;
 }
-.icon {
+/* .icon {
   font-size: 2.5rem;
-}
+} */
 
 .employee-records h4 {
   text-align: center;
