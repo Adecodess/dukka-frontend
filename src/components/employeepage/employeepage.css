@@ -1,19 +1,34 @@
-.section-page {
-  width: 100vw;
+/* .employee-page {
+  background-color: black;
+} */
+
+.employeeSection {
+  width: 90vw;
   margin: 0 auto;
   max-width: 35rem;
   margin-top: 3rem;
 }
+.employeeSection h1 {
+  text-align: center;
+}
+/* .em-page {
+  background: #222;
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  padding: 2rem;
+} */
 
-.employee-image img {
-  width: 180px;
+/* .employee-page:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+} */
+.employeeDetails img {
+  width: 150px;
   height: 170px;
-  background-size: contain;
 }
-.employee-section {
+.employeeDetails {
   display: flex;
-}
-.container {
   justify-content: space-between;
   margin-top: 20px;
   background: #fff;
@@ -22,44 +37,56 @@
   padding: 2rem 3.5rem;
   text-align: center;
 }
-.employee-name {
-  margin: 5px;
+.employeeInfo {
+  text-transform: capitalize;
+  /* margin: 5px; */
+  /* padding-left: 4rem; */
 }
 
-.employee-name h2 {
-  text-transform: capitalize;
+.employeeInfo h2 {
+  color: #000;
   font-weight: 400;
-  font: size 16px;
-}
-.employee-details {
-  font-weight: 300;
-  padding-top: 10px;
-  /* margin: 10px; */
-}
-.employee-details .job {
+  font-size: 20px;
   text-transform: capitalize;
 }
-@media screen and (min-width: 992px) {
-  .section-page {
-    width: 105vw;
-  }
-}
 
-.section-page {
-  background: #222;
-  background: #fff;
-  border-radius: 0.25rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s linear;
-  padding: 2rem;
-}
-section h1 {
+.edit-message {
+  color: hsl(125, 67%, 44%);
+  text-transform: capitalize;
   text-align: center;
+  margin-top: 5px;
 }
+.employeeContent {
+  font-weight: 300;
+  padding-top: 20px;
+  /* margin: 20px; */
+}
+/* .employeeContent .job {
+  text-transform: capitalize;
+} */
+/* @media screen and (min-width: 992px) {
+  .employeeDetails {
+    width: 100vw;
+  }
+} */
+/* @media screen and (min-width: 812px) {
+  .employeeDetails {
+    width: 150vw;
+  }
+} */
+/* @media screen and (min-width: 992px) {
+  .employee-profilee {
+    width: 100vw;
+    background-color: black;
+  }
+} */
+/* @media screen and (min-width: 812px) {
+  .employee-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+} */
 
-.section-page:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
 /* pagination button */
 .btn {
   padding: 0.35rem 0.75rem;
@@ -111,6 +138,7 @@ section h1 {
     max-width: 700px;
   }
 }
+
 .edit-btn,
 .delete-btn {
   background: transparent;
@@ -127,31 +155,16 @@ section h1 {
   color: hsl(125, 67%, 44%);
 }
 .delete-btn {
-  color: hsl(360, 67%, 44%);
+  color: hsl(360, 71%, 66%);
 }
+
 .delete-btn:hover {
-  color: #222;
+  color: hsl(360, 67%, 44%);
 }
 .btnn-container {
   display: flex;
-  padding: 20px 0;
-  background: white;
-  width: '100%';
   justify-content: center;
-  /* margin-top: 8rem; */
-  opacity: 0;
-}
-/* .show {
-  display: block;
-  background-color: #222;
-} */
-.btnn-container:hover {
-  opacity: 1;
-  transition: all 0.5s linear;
-}
-.hide {
-  opacity: 0;
-}
-.show {
-  opacity: 1;
+  align-items: center;
+  /* padding-bottom: 0.5rem; */
+  margin-top: 9rem;
 }

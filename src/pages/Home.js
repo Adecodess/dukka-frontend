@@ -1,10 +1,10 @@
 import React from 'react';
 import CreateEmployeeProfile from '../components/createemployee/CreateEmployeeProfile';
 
-const Home = () => {
+const Home = ({ submitForm }) => {
   return (
     <div>
-      <CreateEmployeeProfile />
+      <CreateEmployeeProfile submitForm={submitForm} />
     </div>
   );
 };

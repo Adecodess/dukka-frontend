@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 
 const useForm = (callback, validate) => {
   const [person, setPerson] = useState({
@@ -20,23 +20,16 @@ const useForm = (callback, validate) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setErrors(validate(person));
 
+    setErrors(validate(person));
     setIsSubmitting(true);
-    // setPerson({
-    //   fullName: '',
-    //   phoneNumber: '',
-    //   email: '',
-    //   position: '',
-    //   salary: '',
-    // });
   };
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
       callback();
     }
-  }, [errors]);
+  }, [errors, callback, isSubmitting]);
 
   return { handleChange, person, handleSubmit, errors, validate };
 };

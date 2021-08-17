@@ -3,62 +3,14 @@ import './createemployeeprofile.css';
 import validate from './validateInfo';
 import Loading from '../Loading';
 import useForm from './useForm';
-import { Link, Redirect, useHistory } from 'react-router-dom';
 
 const CreateEmployeeProfile = ({ submitForm }) => {
   const { handleChange, person, handleSubmit, errors } = useForm(
     submitForm,
     validate
   );
-  // const [errors, setErrors] = useState({});
 
-  // const [values, setValues] = useState({
-  //
-  // });
   const [loading, setLoading] = useState(true);
-  // const [list, setList] = useState([]);
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setValues({
-  //     ...values,
-  //     [name]: value,
-  //   });
-  // };
-
-  // if (isLoggedIn) {
-  //   return <Redirect to="/profile" />;
-  // }
-  // useEffect(() => {
-  //   storing input name
-  //   localStorage.setItem('values', JSON.stringify(values));
-  // }, [values]);
-
-  // else {
-  //     console.log('hello');
-  //     setErrors(validateInfo(values));
-
-  //     ;
-  //   }
-  // history.push('/aboutemployees');
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(values, 'payload');
-  //   console.log(validateInfo(values));
-  //   if (values) {
-  //     setErrors(validateInfo(values));
-  //   }
-  //   history.push('/aboutemployees');
-
-  //   if (Object.keys(errors).length === 0) {
-  //     setLoading(true);
-  //     setValues({});
-  //     setIsLoggedIn(false);
-  //     setLoading(false);
-  //     handleSubmit(values);
-  //   }
-  // };
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 2000);
@@ -73,7 +25,7 @@ const CreateEmployeeProfile = ({ submitForm }) => {
   }
   return (
     <section className="section-center">
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <h3>create employee profile </h3>
         <label htmlFor="fullName" className="form-label">
           Full Name*
@@ -96,7 +48,7 @@ const CreateEmployeeProfile = ({ submitForm }) => {
         <div className="form-control">
           <input
             id="phoneNumber"
-            type="number"
+            type="tel"
             className="form-inputs"
             placeholder="phone number"
             name="phoneNumber"
@@ -154,7 +106,6 @@ const CreateEmployeeProfile = ({ submitForm }) => {
       </form>
       <button onClick={handleSubmit} type="submit" className="submit-btn">
         save
-        {/* <Link to={values ? '/aboutemployees' : null}>save</Link> */}
       </button>
     </section>
   );

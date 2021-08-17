@@ -12,6 +12,9 @@
   .section-center {
     width: 95vw;
   }
+  .submit-btn {
+    margin-top: 3rem;
+  }
 }
 
 .section-center {
@@ -69,9 +72,10 @@ form h3 {
 .submit-btn {
   background: hsl(210, 31%, 80%);
   border-color: transparent;
-  width: 20rem;
+  width: 31rem;
   height: 4rem;
-  display: grid;
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   text-transform: capitalize;
@@ -84,4 +88,9 @@ form h3 {
 .submit-btn:hover {
   background: hsl(210, 22%, 49%);
   color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .submit-btn {
+    width: 16rem;
+  }
 }
